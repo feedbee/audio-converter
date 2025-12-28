@@ -54,4 +54,4 @@ docker run --rm -v "$(pwd):/usr/src/app" audio-converter song1.mp3 song2.mp3 -f 
 If you have `node` and `ffmpeg` installed on your host machine:
 
 1. `npm install`
-2. `node cli.js -i input.m4a`
+2. `node cli.js input.m4a`
