@@ -19,25 +19,25 @@ Run the container by mounting your current directory (or the directory containin
 
 ### Basic Syntax
 ```bash
-docker run --rm -v "$(pwd):/usr/src/app" audio-converter <input_files...> [options]
+docker run --rm -v "$(pwd):/data" audio-converter <input_files...> [options]
 ```
 
 ### Examples
 
 **1. Convert a single file:**
 ```bash
-docker run --rm -v "$(pwd):/usr/src/app" audio-converter input.m4a
+docker run --rm -v "$(pwd):/data" audio-converter input.m4a
 ```
 
 **2. Convert MULTIPLE files (Batch):**
 ```bash
-docker run --rm -v "$(pwd):/usr/src/app" audio-converter *.m4a
+docker run --rm -v "$(pwd):/data" audio-converter *.m4a
 ```
 *Note: Your shell expands `*.m4a` into a list of files passed to the container.*
 
 **3. Convert to WAV with specific bitrate:**
 ```bash
-docker run --rm -v "$(pwd):/usr/src/app" audio-converter song1.mp3 song2.mp3 -f wav -b 320k
+docker run --rm -v "$(pwd):/data" audio-converter song1.mp3 song2.mp3 -f wav -b 320k
 ```
 
 ## Options
