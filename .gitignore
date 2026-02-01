@@ -1,4 +1,3 @@
 node_modules/
 .DS_Store
-files/*.m4a
-files/.DS_Store
+files/
